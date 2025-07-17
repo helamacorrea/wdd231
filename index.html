@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page of WDD231 BYU Idaho course">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <img src="images/rocket-takeoff.svg" alt="logo"> <!-- use svg here -->
+            <h1>WDD 231 | <span class="authorName">Helamã Verardo Petri Corrêa</span></h1>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav class="navigation">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="#">Chamber Project</a>
+                <a href="#">Final Project</a>
+            </div>
+            
+        </nav>    
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am a student of Byu Idaho from Brazil,
+                I'm a member of the Church of Jesus Crist of Latter Day Saints,
+                I'm a very entrepreneur person and I love my wife.
+            </p>
+        </section>
+        <section class="photo-sec">
+            <h2>Student Photo</h2>
+            <img src="images/student-photo.webp" alt="student photo">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="certificate-buttons">    
+                <button type="button" id="all">All</button>
+                <button type="button" id="cse">CSE</button>
+                <button type="button" id="wdd">WDD</button>
+            </div>
+            <span id="credits"></span>
+            <span id="courseList"></span>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </div>
+        <div>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
