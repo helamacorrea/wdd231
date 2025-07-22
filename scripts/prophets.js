@@ -28,16 +28,17 @@ function displayProphets(prophets) {
         portrait.setAttribute("height", "440");
 
         card.appendChild(fullName);
-        card.appendChild(portrait);
+        
 
-        let birthDate = document.createElement("p", `Date of Birth: ${prophet.birthdate}`);
-        birthDate.textContent
+        let birthDate = document.createElement("p");
+        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
 
-        let birthPlace = document.createElement("p", `Place of Birth: ${prophet.birthplace}`);
+        let birthPlace = document.createElement("p");
+        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
         card.appendChild(birthDate);
         card.appendChild(birthPlace);
-
+        card.appendChild(portrait);
 
         cards.appendChild(card);
     });   
