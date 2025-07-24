@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Conceitto Broker",
+      "address": "Rua das Flores, 123 - Centro",
+      "phone": "(47) 99999-9999",
+      "url": "https://www.imobiliariaconceitto.com.br/",
+      "logo": "../images/conceito-logo.webp",
+      "level": 1,
+      "field": "Real Estate"
+    },
+    {
+      "name": "Imobiliária Connect",
+      "address": "Av. Brasil, 456 - Centro",
+      "phone": "(47) 98888-8888",
+      "url": "https://imobiliariaconnect.com.br/",
+      "logo": "../images/connect-logo.webp",
+      "level": 2,
+      "field": "Real Estate"
+    },
+    {
+      "name": "Senac RS",
+      "address": "Rua Sete de Setembro, 123 - Centro",
+      "phone": "(51) 3333-4444",
+      "url": "https://www.senacrs.com.br/home",
+      "logo": "../images/senac-logo.webp",
+      "level": 3,
+      "field": "Education"
+    },
+    {
+      "name": "Senai RS",
+      "address": "Rua da Indústria, 100 - Bairro Industrial",
+      "phone": "(51) 3456-7890",
+      "url": "https://www.senairs.org.br/",
+      "logo": "../images/senai-logo.webp",
+      "level": 2,
+      "field": "Technical Education"
+    },
+    {
+      "name": "Faculdade IDEAU",
+      "address": "Av. Universitária, 321 - Caxias do Sul",
+      "phone": "(54) 3333-1234",
+      "url": "https://www.caxias.ideau.com.br/",
+      "logo": "../images/ideau-logo.webp",
+      "level": 1,
+      "field": "Higher Education"
+    },
+    {
+      "name": "UCS - Universidade de Caxias do Sul",
+      "address": "Rua Francisco Getúlio Vargas, 1130 - Petrópolis",
+      "phone": "(54) 3218-2100",
+      "url": "https://www.ucs.br/site",
+      "logo": "../images/ucs-logo.webp",
+      "level": 3,
+      "field": "University"
+    },
+    {
+      "name": "Sazi Máquinas",
+      "address": "BR-116, km 150 - Caxias do Sul",
+      "phone": "(54) 3209-2500",
+      "url": "https://www.sazi. com.br/",
+      "logo": "../images/sazi-logo.webp",
+      "level": 2,
+      "field": "Industry"
+    }
+  ]
+}
