@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <meta name="description" content="Home page of a network of businesses of Farroupilha RS Brazil">
+    <meta property="og:description" content="A network of businesses of Farroupilha RS Brazil">
+    <meta property="og:image" content="https://helamacorrea.github.io/wdd231/chamber/images/farroupilha-city-hall.webp">
+    <meta property="og:title" content="Chamber of Comerce Website">
+    <meta property="og:url" content="https://helamacorrea.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image:width" content="50">
+    <meta property="og:image:height" content="50">
+    <title>Farroupilha Chamber of Comerce - Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/bar-chart-line-fill.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/bar-chart-line-fill.svg" alt="chamber of comerce Farroupilha logo">
+        <p>Farroupilha Chamber of Comerce</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+    
+      <div class="hero">
+        <picture>
+            <source srcset="images/chamber-desktop.webp" media="(min-width: 680px)">
+            <img src="images/chamber-phone.webp" alt="chamber of comerce building" width="auto" height="600">
+        </picture>
+        <a class="call-to-action" href="#">Call to Action</a>
+      </div>
+
+      <h1>Home Page - Farroupilha Chamber of Comerce</h1>
+
+      <div class="middle-section">
+        <div class="events">
+            <h2>Events</h2>
+            <p>- Oct 23 Chamber`s Day</p>
+        </div>
+        <div class="current-weather">
+            <h2>Current Weather</h2>
+            <img id="weather-icon" src="" alt="">
+            <p><span id="current-temp"></span></p>
+            <p><span id="description-weather"></span></p>
+        </div>
+        <div class="weather-forecast">
+            <h2>Weather Forecast</h2>
+            <!-- must be 3 day forecast from the current date -->
+            <p><span id="today"></span></p>
+            <p><span id="next-day1"></span></p>
+            <p><span id="next-day2"></span></p>
+        </div>
+      </div>
+      <!-- Some ramdom business cards -->
+      <div class="cards" id="cards"></div>
+
+    </main>
+    <footer>
+        <div>
+            <p>
+                Farroupilha Chamber of Comerce <br>
+                Phone: +55(54)3223-1234 <br>
+                Developed in a BYUI class WDD231 Course<br>
+            </p>
+        </div>
+        <div>
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </div>
+        <div>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
