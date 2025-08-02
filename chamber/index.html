@@ -18,17 +18,25 @@
     <link rel="icon" href="images/bar-chart-line-fill.ico">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/companySort.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/wayfinding.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/bar-chart-line-fill.svg" alt="chamber of comerce Farroupilha logo">
-        <p>Farroupilha Chamber of Comerce</p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="#">Join</a>
-            <a href="#">Discover</a>
+        <div class="header-title">
+            <img src="images/bar-chart-line-fill.svg" alt="chamber of comerce Farroupilha logo">
+            <p>Farroupilha Chamber of Comerce</p>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav class="navigation">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,7 +46,7 @@
             <source srcset="images/chamber-desktop.webp" media="(min-width: 680px)">
             <img src="images/chamber-phone.webp" alt="chamber of comerce building" width="auto" height="600">
         </picture>
-        <a class="call-to-action" href="#">Call to Action</a>
+        <a class="call-to-action" href="#">Join Farroupilha Chamber</a>
       </div>
 
       <h1>Home Page - Farroupilha Chamber of Comerce</h1>
@@ -51,15 +59,17 @@
         <div class="current-weather">
             <h2>Current Weather</h2>
             <img id="weather-icon" src="" alt="">
-            <p><span id="current-temp"></span></p>
-            <p><span id="description-weather"></span></p>
+            <p>
+                <span id="current-temp"></span><br>
+                <span id="description-weather"></span>
+            </p>
         </div>
         <div class="weather-forecast">
             <h2>Weather Forecast</h2>
             <!-- must be 3 day forecast from the current date -->
-            <p><span id="today"></span></p>
             <p><span id="next-day1"></span></p>
             <p><span id="next-day2"></span></p>
+            <p><span id="next-day3"></span></p>
         </div>
       </div>
       <!-- Some ramdom business cards -->
