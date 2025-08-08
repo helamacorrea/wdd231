@@ -85,10 +85,16 @@ const wdd = document.querySelector("#wdd");
 const courseList = document.querySelector("#courseList");
 const credits = document.querySelector("#credits");
 
+const courseDetails = document.querySelector('#course-details');
+
+
 all.addEventListener('click', () => {
     courseList.innerHTML = displayCourses(courses);
     credits.innerHTML = displayCredits(courses);
 })
+courseList.innerHTML = displayCourses(courses);
+credits.innerHTML = displayCredits(courses);
+
 
 cse.addEventListener('click', () => {
     const cseArray = courses.filter(course => course.subject === 'CSE');
@@ -107,10 +113,10 @@ function displayCourses(coursesArray) {
     let html = '';
     coursesArray.forEach(course => {
         if (course.completed === true) {
-            html += `<p class="completed-course">✔️ ${course.subject} ${course.number}</p>`;
+            html += `<p class="completed-course courseP" id="${course.number}">✔️ ${course.subject} ${course.number}</p>`;    
             }
             else {
-                html += `<p class="uncompleted-course">${course.subject} ${course.number} - missing </p>`;
+                html += `<p class="uncompleted-course courseP" id="${course.number}">${course.subject} ${course.number} - missing </p>`;
             }
         });
     return html;
@@ -123,3 +129,36 @@ function displayCredits(coursesArray) {
 function sumUp(total, num) {
     return total + num;
 }
+
+        // const courseP = document.querySelector(`#${course.number}`);
+        //     courseP.addEventListener('click', () => {
+        //         displayCourseDetails(course);
+        //         }); 
+
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+
+const courseListP = document.querySelectorAll('.courseP');
+
+courseListP.forEach(p => {
+        p.addEventListener('click', () => {
+            displayCourseDetails(courses.find(course => course.number === Number(p.id)));
+        });
+});
+

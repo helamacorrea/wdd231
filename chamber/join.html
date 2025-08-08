@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <meta name="description" content="A network of businesses of Farroupilha RS Brazil">
+    <meta property="og:description" content="A network of businesses of Farroupilha RS Brazil">
+    <meta property="og:image" content="https://helamacorrea.github.io/wdd231/chamber/images/farroupilha-city-hall.webp">
+    <meta property="og:title" content="Chamber of Comerce Website">
+    <meta property="og:url" content="https://helamacorrea.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image:width" content="50">
+    <meta property="og:image:height" content="50">
+    <title>Chamber of Comerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/bar-chart-line-fill.ico">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/bar-chart-line-fill.svg" alt="chamber of comerce Farroupilha logo">
+        <p>Farroupilha Chamber of Comerce</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-div">
+            <h1>Chamber of Comerce Application Form</h1>
+            <form method="GET" action="thanks.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Organizational Title <input type="text" name="org-title" required autocomplete="organizational-title" pattern="^[A-Za-z\- ]{7,}$" title="At least 7 characters. Only alpha characters, hyphens and spaces."></label>
+
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Mobile Phone Number <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" required></label>
+
+                <label>Business/Organization's Name <input type="text" name="organization" required autocomplete="organization" title="Your Business/Organization's Name"></label>
+
+                <label>Business/Organization's Description <br><textarea name="org-description" title="Description of Your Organization"></textarea></label>
+
+                <label>Membership Level
+                <select name="membership" required>
+                    <option value="">None</option>
+                    <option value="NP">Non Profit</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold"> Gold Membership</option>
+                </label>
+
+                
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Apply for Membership">
+            </form>
+        </div>
+        <div class="membership-div">
+            <div>
+                <h2>Non Profit Membership</h2>
+                <button type="button" id="np">Learn More</button>
+            </div>
+            <div>
+                <h2>Bronze Membership</h2>
+                <button type="button" id="bronze">Learn More</button>
+            </div>
+            <div>
+                <h2>Silver Membership</h2>
+                <button type="button" id="silver">Learn More</button>
+            </div>
+            <div>
+                <h2>Gold Membership</h2>
+                <button type="button" id="gold">Learn More</button>
+            </div>
+        </div>
+        <dialog id="learn-more"></dialog>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Farroupilha Chamber of Comerce <br>
+                Phone: +55(54)3223-1234 <br>
+                Developed in a BYUI class WDD231 Course<br>
+            </p>
+        </div>
+        <div>
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </div>
+        <div>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
