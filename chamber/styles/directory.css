@@ -215,6 +215,9 @@ footer a {
     text-decoration: none;
 }
 
+#directory {
+    text-decoration: underline;
+}
 
 
 @media (min-width: 680px) {

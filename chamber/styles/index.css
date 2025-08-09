@@ -269,6 +269,10 @@ footer a {
     text-decoration: none;
 }
 
+#home {
+    text-decoration: underline;
+}
+
 
 
 @media (min-width: 680px) {

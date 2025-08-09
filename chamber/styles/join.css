@@ -208,6 +208,10 @@ main {
 .membership-div div:nth-child(3) { --delay: 0.4s; }
 .membership-div div:nth-child(4) { --delay: 0.6s; }
 
+#join {
+    text-decoration: underline;
+}
+
 
 @media (min-width: 600px) {
     main {
