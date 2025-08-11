@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #008277;
+    --secondary-color:  #25AF91;
+    --accent-color: #6FF9BF;
+}
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+main {
+    margin: 0 2rem;
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    margin: 0;
+    color: white;
+    padding: 1rem;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+.p-color {
+    background-color: var(--primary-color);
+    width: 190px;
+    height: 20px;
+}
+.s-color {
+    background-color: var(--secondary-color);
+    width: 190px;
+    height: 20px;
+}
+.a-color {
+    background-color: var(--accent-color);
+    width: 190px;
+    height: 20px;
+}
+
+.wireframe img {
+    display: block;
+    margin: 0 auto;
+}
+
+.wireframe figure {
+    margin-bottom: 5rem;
+}
+
+.wireframe h2 {
+    text-align: center;
+}
+
