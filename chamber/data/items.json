@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "OpenAI Office",
+      "address": "San Francisco, California",
+      "description": "Office of OpenAI",
+      "picture": "./images/item-openai.webp",
+      "id": "openai"
+    },
+    {
+      "name": "B3",
+      "address": "São Paulo, Brazil",
+      "description": "Brazilian Stock Exchange, where real estate funds are traded",
+      "picture": "./images/item-b3.webp",
+      "id": "b3"
+    },
+    {
+      "name": "Google AI Research",
+      "address": "Mountain View, California",
+      "description": "Google's main AI research center",
+      "picture": "./images/item-google-ai.webp",
+      "id": "google"
+    },
+    {
+      "name": "Zillow Headquarters",
+      "address": "Seattle, Washington",
+      "description": "Headquarters of Zillow, a major online real estate marketplace",
+      "picture": "./images/item-zillow.webp",
+      "id": "zillow"
+    },
+    {
+      "name": "Proptech Hub",
+      "address": "Dubai, United Arab Emirates",
+      "description": "Innovation hub for real estate technology startups",
+      "picture": "./images/item-proptech.webp",
+      "id": "proptech"
+    },
+    {
+      "name": "NVIDIA HQ",
+      "address": "Santa Clara, California",
+      "description": "Headquarters of NVIDIA, a leader in AI hardware",
+      "picture": "./images/item-nvidia.webp",
+      "id": "nvidia"
+    },
+    {
+      "name": "Cushman & Wakefield",
+      "address": "Chicago, Illinois",
+      "description": "Global real estate services firm",
+      "picture": "./images/item-cushman.webp",
+      "id": "cushman"
+    },
+    {
+      "name": "MIT AI Lab",
+      "address": "Cambridge, Massachusetts",
+      "description": "Massachusetts Institute of Technology Artificial Intelligence Laboratory",
+      "picture": "./images/item-mit-ai.webp",
+      "id": "mit"
+    }
+  ]
+}
