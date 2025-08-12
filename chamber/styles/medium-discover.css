@@ -1,0 +1,38 @@
+@media only screen and (min-width: 641px) {
+
+    .card {
+        width: 90%;
+        max-width: 800px;
+
+        grid-template-areas: 
+        "photo title"
+        "photo description"
+        "photo address"
+        "photo button";
+        justify-items: unset;
+        text-align: start;
+        grid-template-columns: 330px 1fr;
+        
+
+    }
+    .card img {
+        align-self: center;
+        margin: 1rem;
+        justify-self: center;
+        transition: filter 0.3s ease;
+    }
+    .card img:hover {
+        filter: saturate(180%);
+    }
+    .card button {
+        width: fit-content;
+        justify-self: start;
+
+    }
+    .card p {
+        display: block;
+    }
+
+
+    
+}
