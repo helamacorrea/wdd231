@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #008277;
+    --background-color: #fafafa;
+    --typeface-color: #1a1a1a;
+    --brighter: #6FF9BF;
+    --middle: #25AF91;
+}
+
+*{
+    font-family: Roboto;
+}
+
+header {
+	background-color: var(--off-white);
+	padding: 20px;
+}
+
+
+.open a {
+    display: block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+html, body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+nav div {
+	list-style: none;
+	display: none;
+	flex-direction: column;
+
+    z-index: 1;
+    background-color: var(--background-color);
+    
+}
+
+nav.open div {
+    display: flex;
+
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    color: var(--typeface-color);
+}
+nav a:hover {
+    font-weight: bold;
+    color: var(--primary-color); /*maybe change to 1a1a1a*/
+}
+.start-now {
+    padding: .55rem;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--primary-color), var(--middle));
+    border: none;
+    max-width: 130px;
+    align-self: center;
+}
+.start-now:hover {
+    background: linear-gradient(135deg, #25AF91, #6FF9BF);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--typeface-color);
+}
+
+main {
+    min-height: 600px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: start;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+
+
+@media (min-width: 680px) {
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        padding: 0 1rem;
+        padding-top: 3px;
+	}
+    nav div {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+        align-items: center;
+	}
+    #menu {
+		display: none; 
+	}
+    .start-now {
+        margin: 5px;
+    }
+}
+
+
