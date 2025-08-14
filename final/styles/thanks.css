@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #008277;
+    --background-color: #fafafa;
+    --typeface-color: #1a1a1a;
+    --brighter: #6FF9BF;
+    --middle: #25AF91;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.check-info {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+h1,p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+

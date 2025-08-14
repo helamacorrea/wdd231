@@ -67,7 +67,7 @@ function displayTierDetails(idStr) {
   learnMore.innerHTML = '';
   learnMore.innerHTML = `
     <button id="closeModal">❌</button>
-    <h2>${membershipTiers[idStr].name}</h2>
+    <h2>${membershipTiers[idStr].name}</h2> 
     <p><strong>Cost</strong>: $${membershipTiers[idStr].cost}</p>
     <p>${membershipTiers[idStr].benefits.map(b => `<li>${b}</li>`).join('')}</p>
   `;

@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #008277;
+    --background-color: #fafafa;
+    --typeface-color: #1a1a1a;
+    --brighter: #6FF9BF;
+    --middle: #25AF91;
+}
+h1 {
+    text-align: center;
+}
+.card {
+    border: 1px solid red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+button {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    color: white;
+    font-size:medium;
+}
+button:hover {
+    background-color: var(--middle);
+    color: black;
+}
+.cards section {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards .name {
+    /* display: none; */
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.list section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    text-align:left;
+    justify-items: start;
+    gap: 15px;
+    padding: 0 1rem;
+}
+/* .list img {
+    display: none;
+} */
+
+.list section:nth-child(even) {
+    background-color: var(--brighter);
+}
+.list a {
+    word-break:break-all;
+    overflow-wrap: anywhere;
+}
+
+.form-div {
+    margin: 5px;
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.form-div form input {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+.form-div form textarea {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid black;
+    resize: none;
+    height: 100px;
+}
+
+.form-div select {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+
+.form-div input[type=submit] {
+    width: fit-content;
+    font-size: 17px;
+    background-color: var(--primary-color);
+    color: white
+}
+
+.form-div input[type=submit]:hover {
+    background-color: var(--middle);
+    color: black;
+}
+
+#closeModal {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0  0  0 auto;
+    display: block;          
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#closeModal:hover {
+    transform: scale(1.25);
+}
+
+.invest {
+    margin: 5px 0;
+}

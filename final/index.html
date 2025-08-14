@@ -15,25 +15,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="#">
+    <link rel="icon" href="images/landzy-icon2.ico">
     <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
 
 </head>
 <body>
     <header>
-        <img class="logo" src="images/landzy-logo.svg" alt="landzy logo" height="30">
+        <img class="logo" src="images/landzy-logo.svg" alt="landzy logo" height="30" width="125">
         <nav class="navigation">
             <div>
                 <a href="index.html">Home</a>
-                <a href="cities.html">Cities</a>
-                <a class="start-now" href="invest-guide.html">Investment Guide</a>
+                <a href="invest-guide.html">Investment Guide</a>
+                <a class="start-now" href="cities.html">Demographics</a>
             </div>
         </nav>
             <button type="button" id="menu"></button>
     </header>
     <main>
+        <div class="hero-div">
+            <picture>
+                <source srcset="images/hero-desktop.webp" media="(min-width: 600px)">
+                <img src="images/hero-mobile.webp" alt="SC city, sea and beach" width="700" height="1050">
+            </picture>
+            <div class="h1-div">
+            <h1>Welcome to Landzy</h1>
+            <h2>Your Smart Guide to Real Estate Investment in Santa Catarina</h2>
+            </div>
+        </div>
+
+        <div class="city-examples">
+            <h3>Compare cities with detailed <span>demographic insights</span> for investors like you</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/bc.webp" loading="lazy" height="300" alt="Balneario Camboriu City">
+                    <p><strong>Balneario Camboriu - SC</strong></p>
+                    <p>Population: 139,155</p>
+                    <p>Total Area: 45km²</p>
+                    <p>Density: 3,077.70 hab./km²</p>
+                    <p>Human Dev. Index: 0.845</p>
+                </div>
+                <div class="card">
+                    <img src="images/itapema.webp" loading="lazy" height="300" alt="Itapema City">
+                    <p><strong>Itapema - SC</strong></p>
+                    <p>Population: 75,940</p>
+                    <p>Total Area: 59km²</p>
+                    <p>Density: 1,286.6 hab./km²</p>
+                    <p>Human Dev. Index: 0.796</p>
+                </div>
+                <div class="card">
+                    <img src="images/florianopolis.webp" loading="lazy" height="300" alt="Florianopolis City">
+                    <p><strong>Florianopolis - SC</strong></p>
+                    <p>Population: 537,211</p>
+                    <p>Total Area: 675km²</p>
+                    <p>Density: 796.05 hab./km²</p>
+                    <p>Human Dev. Index: 0.847</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-div">
+            <p>A platform designed to spotlight the <span>best opportunities</span> across Santa Catarina.</p>
+            <img src="images/data.webp" loading="lazy" height="700" width="700" alt="Computer with Data">
+        </div>
+
+        <div class="cta">
+            <h4>Start exploring <span>today</span>, find the <span>ideal city</span> for your next investment!</h4>
+            <a class="start-now" href="cities.html">View Demographics</a>
+        </div>
+
+
+
+
+
+
 
 
     </main>
