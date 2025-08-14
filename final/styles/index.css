@@ -115,6 +115,12 @@ h4 span {
 #index-a {
     text-decoration: underline;
 }
+.logo {
+    margin: 1px;
+}
+.navigation {
+    font-weight: 200;
+}
 
 
 @media only screen and (min-width:600px) {
