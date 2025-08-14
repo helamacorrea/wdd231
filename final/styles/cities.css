@@ -146,3 +146,7 @@ button:hover {
 .invest {
     margin: 5px 0;
 }
+
+#cities-a {
+    text-decoration: underline;
+}

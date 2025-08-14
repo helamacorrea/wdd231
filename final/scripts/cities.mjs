@@ -15,7 +15,7 @@ const cards = document.querySelector('#cards');
 // add module .mjs, density, video (with api, asyn try, module), dialog form, form URLSearchparams, localStorage use, invest guide page, wayfinding
 
 // cities.js: video (with api, asyn try, module)
-// invest-guide: wayfinding, update heads, link to the video on footer
+// invest-guide: link to the video on footer
 
 const areaUrl = 'https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N6[N3[42]]';
 
